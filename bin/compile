@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+set -e
+
+LIBGDA_TARBALL=https://s3-eu-west-1.amazonaws.com/midgard-heroku/libgda.tar.gz
+
+echo "-----> Installing libgda-4.2"
+curl --silent --max-time 60 --location "$LIBGDA_TARBALL" | tar xz
+
