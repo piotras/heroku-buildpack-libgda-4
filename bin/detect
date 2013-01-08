@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-exit 0
+echo "-----> Libgda 4.2 library"
